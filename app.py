@@ -15,7 +15,7 @@ REMNA_API_URL = f"{REMNA_BASE_URL}/subscription-settings"
 REMNA_TOKEN = os.environ["REMNA_TOKEN"]
 GITHUB_RAW_URL = os.environ.get(
     "GITHUB_RAW_URL",
-    "https://raw.githubusercontent.com/potokyou/potokvpn-routing-update/refs/heads/main/HAPP/DEFAULT.DEEPLINK",
+    "https://raw.githubusercontent.com/potokyou/potokvpn-routing/refs/heads/main/HAPP/DEFAULT.DEEPLINK",
 )
 CHECK_INTERVAL = int(os.environ.get("CHECK_INTERVAL", "300"))  # seconds
 SSL_VERIFY = REMNA_BASE_URL.startswith("https://")
