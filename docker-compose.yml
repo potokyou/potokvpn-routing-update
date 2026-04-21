@@ -1,0 +1,14 @@
+services:
+  routing-updater:
+    image: ghcr.io/potokyou/potokvpn-routing-update:latest
+    container_name: remna-routing-updater
+    restart: unless-stopped
+    env_file:
+      - .env
+    networks:
+      - remnawave-network
+
+networks:
+  remnawave-network:
+    name: remnawave-network
+    external: true
